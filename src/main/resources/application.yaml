@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: notificacao
+  mail:
+    host: smtp.mailtrap.io
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+app:
+  api:
+    key: ${API_KEY}
+
+mailtrap:
+  api:
+    token: ${MAILTRAP_API_TOKEN}
+    url: ${MAILTRAP_API_URL}
+
+server:
+  port: 8081
